@@ -2,7 +2,7 @@
 
 use App\src\interfaces\{WorkableInterface, SleepableInterface, ManageableInterface};
 
-class Worker  implements WorkableInterface, SleepableInterface, ManageableInterface
+class Worker implements WorkableInterface, SleepableInterface, ManageableInterface
 {
   public function work()
   {
@@ -13,6 +13,13 @@ class Worker  implements WorkableInterface, SleepableInterface, ManageableInterf
   public function sleep()
   {
     var_dump('Worker is sleeping.');
+  }
+
+
+  public function manage()
+  {
+    $this->work();
+    $this->sleep();
   }
 
 }
