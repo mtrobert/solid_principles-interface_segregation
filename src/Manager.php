@@ -2,7 +2,7 @@
 
 class Manager
 {
-  public function manage(Manageable $worker)
+  public function manage(ManageableInterface $worker)
   {
     $worker->manage();
   }
