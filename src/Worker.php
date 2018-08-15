@@ -16,7 +16,7 @@ class Worker implements WorkableInterface, SleepableInterface, ManageableInterfa
   }
 
 
-  public function manage()
+  public function manage()        //this method will be used by the consumer class
   {
     $this->work();
     $this->sleep();
